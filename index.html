@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Speak</title>
-    <script src = "app.js" type = "text/javascript"></script>
-</head>
-<body>
     
+    <style>
+        textarea {
+            width: 90%;
+            display: block;
+            padding: 1rem;
+            margin: 1rem;
+            height: 10vh;
+
+        }
+        #output {
+            border: 1px solid black;
+            height:10vh;
+            width:90%;
+            margin: 1rem;
+            padding:1rem;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <textarea id="txt-input" placeholder="Type English in this box and we will convert it into banana"></textarea>
+
+    <h1>Let's talk banana</h1>
+    <button id="btn-translate">Translate</button>
+    <div style="font-size: larger;">Output will come here</div>
+
+    <button id= "output"></button>
+    
+    
+    
+    <script src="app.js" type="text/javascript"></script>
+
+
+
 </body>
+
 </html>

@@ -18,18 +18,18 @@ function getTranslationURL(text) {
 
 
 function clickHandler() {
-    var inputText = txtInput.value;
-    // outputDiv.innerText = "sadhasidhia  " + txtInput.value;
+    var inputText = txtInput.value; //accept input
+    
 
-    fetch(getTranslationURL(inputText))
+    fetch(getTranslationURL(inputText)) //processing when communicating with server
         .then(response => response.json())
         .then(json => {
             var translatedText = json.contents.translated;
-            outputDiv.innerText = translatedText;
+            outputDiv.innerText = translatedText; // convert json response into output
 
             })
         
         .catch(errorHandler)
 };
 
-btnTranslate.addEventListener("click", clickHandler);
+btnTranslate.addEventListener("click", clickHandler); 

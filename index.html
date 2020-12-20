@@ -7,33 +7,66 @@
     <title>Banana Speak</title>
 
     <style>
-        textarea {
-            width: 90%;
-            display: block;
-            padding: 1rem;
-            margin: 1rem;
-            height: 10vh;
+        @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: rgb(199, 211, 223);
+        }
+
+
+
+
+
+
+        .btn-translate {
+            align-self: center;
+            align-content: center;
+
 
         }
 
+
+        textarea {
+            border: 1px solid black;
+            width: 90%;
+            padding: 1rem;
+            margin: 2rem 2rem;
+            height: 10vh;
+
+        }
+        .outputtext {
+            font-size: larger;
+            padding: 1rem, 1rem;
+            text-align: center;
+        }
         #output {
             border: 1px solid black;
             height: 10vh;
             width: 90%;
-            margin: 1rem;
+            margin: 2rem 2rem;
             padding: 1rem;
         }
+        h1 {
+            color: rgb(109, 109, 42);
+            text-align: center;
+        }
+            
+        }
     </style>
+
+
 
 </head>
 
 <body>
+    
+
+    <h1>   Let's talk banana</h1>
     <textarea id="txt-input" placeholder="Type English in this box and we will convert it into banana"></textarea>
-
-    <h1>Let's talk banana</h1>
     <button id="btn-translate">Translate</button>
-    <div style="font-size: larger;">Output will come here</div>
-
+    <div class="outputtext">Below is the translated output!</div>
     <button id="output"></button>
 
 

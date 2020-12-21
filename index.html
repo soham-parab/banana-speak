@@ -12,7 +12,7 @@
 
         body {
             font-family: 'Lato', sans-serif;
-            background-color: rgb(199, 211, 223);
+            background-color: rgb(109, 172, 235);
         }
 
 
@@ -20,36 +20,58 @@
 
 
 
-        .btn-translate {
-            align-self: center;
-            align-content: center;
+        #btn-translate {
+            position: relative;
+            display:flex;
+            justify-content: center; 
+            border:1 px solid;
+            text-align: center;
+            margin:auto;
+            top:70px;
 
-
+            padding:0.5rem 0.5rem;
         }
 
 
         textarea {
+            position:relative;
             border: 1px solid black;
-            width: 90%;
-            padding: 1rem;
-            margin: 2rem 2rem;
-            height: 10vh;
+            width: 60%;
+            padding: 0.9rem;
+            margin:auto;
+            top:30px;
+            height: 7vh;
+            display:block;
+            justify-content: center;
+            align-content:center;
+            
 
         }
         .outputtext {
             font-size: larger;
-            padding: 1rem, 1rem;
+            display:block;
+            margin:auto;
+            padding: 2rem, 2rem;
+            
+            height:10px;
+            position: relative;
+            top:90px;
             text-align: center;
+            
+
         }
         #output {
+            position:relative;
             border: 1px solid black;
             height: 10vh;
             width: 90%;
-            margin: 2rem 2rem;
+            margin: 5rem 3rem;
             padding: 1rem;
+            top:30px;
+            
         }
         h1 {
-            color: rgb(109, 109, 42);
+            color: rgb(77, 77, 21);
             text-align: center;
         }
             
@@ -63,9 +85,13 @@
 <body>
     
 
-    <h1>   Let's talk banana</h1>
+    <h1>   Let's talk banana!</h1>
     <textarea id="txt-input" placeholder="Type English in this box and we will convert it into banana"></textarea>
+    
     <button id="btn-translate">Translate</button>
+    
+    
+    
     <div class="outputtext">Below is the translated output!</div>
     <button id="output"></button>
 
